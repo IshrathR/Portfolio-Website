@@ -1,4 +1,4 @@
-import { LuBadgeCheck, LuCalendar } from 'react-icons/lu';
+import { LuCalendar } from 'react-icons/lu';
 import SectionTitle from '../ui/SectionTitle';
 import certifications from '../../data/certifications';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
@@ -20,7 +20,17 @@ export default function Certifications() {
                             key={cert.id}
                             className="glass p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 reveal flex flex-col gap-3"
                         >
-                            <LuBadgeCheck size={28} className="text-primary shrink-0" />
+                            {cert.logo ? (
+                                <img
+                                    src={cert.logo}
+                                    alt={cert.issuer}
+                                    className="w-10 h-10 object-contain rounded shrink-0"
+                                />
+                            ) : (
+                                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                                    <span className="text-primary font-bold text-xs">{cert.issuer[0]}</span>
+                                </div>
+                            )}
                             <div>
                                 <h3 className="text-sm font-bold leading-snug mb-1">
                                     {cert.title}

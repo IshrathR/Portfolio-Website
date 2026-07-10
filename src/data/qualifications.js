@@ -25,12 +25,14 @@ const qualifications = {
             title: "Trainee Software Engineer",
             subtitle: "99x · 4 years 3 months",
             date: "Jul 2021 – Sep 2025",
+            logo: "/assets/img/99x-logo-color.png",
         },
         {
             id: 2,
             title: "Senior Software Engineer",
             subtitle: "99x · 11 months",
             date: "Sep 2025 – Present",
+            logo: "/assets/img/99x-logo-color.png",
         },
     ],
 };
