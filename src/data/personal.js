@@ -13,7 +13,7 @@ export const personal = {
         { value: "10+", label: "Completed\nProjects" },
         { value: "5+", label: "Certifications\nEarned" },
     ],
-    cvPath: "/assets/pdf/IshrathRajiCV.pdf",
+    cvPath: "/assets/pdf/IshrathRaji-CV.pdf",
     profileImage: "/assets/img/ishrath.png",
     aboutImage: "/assets/img/about.jpg",
     contact: {
