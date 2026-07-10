@@ -513,12 +513,18 @@ img {
   width: 80%;
 }
 .skills__react {
-  width: 65%;
+  width: 85%;
 }
 .skills__angular {
   width: 70%;
 }
 
+.skills__dotnet {
+  width: 90%;
+}
+.skills__csharp {
+  width: 85%;
+}
 .skills__php {
   width: 70%;
 }
@@ -543,7 +549,7 @@ img {
   width: 60%;
 }
 .skills__azure {
-  width: 50%;
+  width: 85%;
 }
 
 .skills__mysql {
