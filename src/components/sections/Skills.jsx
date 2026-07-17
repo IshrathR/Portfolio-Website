@@ -1,34 +1,12 @@
-import { useState, useEffect, useRef } from 'react';
 import SectionTitle from '../ui/SectionTitle';
-import SkillBar from '../ui/SkillBar';
 import skills from '../../data/skills';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 
 export default function Skills() {
     const revealRef = useScrollReveal();
-    const [barsVisible, setBarsVisible] = useState(false);
-    const sectionRef = useRef(null);
-
-    useEffect(() => {
-        const node = sectionRef.current;
-        if (!node) return;
-
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setBarsVisible(true);
-                    observer.disconnect();
-                }
-            },
-            { threshold: 0.15 }
-        );
-
-        observer.observe(node);
-        return () => observer.disconnect();
-    }, []);
 
     return (
-        <section ref={sectionRef} id="skills" className="py-24 bg-slate-50/50 dark:bg-slate-800/30">
+        <section id="skills" className="py-24 bg-slate-50/50 dark:bg-slate-800/30">
             <div className="max-w-[1100px] mx-auto px-6">
                 <SectionTitle title="Skills" subtitle="My technical expertise" />
 
@@ -45,14 +23,14 @@ export default function Skills() {
                                 <category.icon size={24} className="text-primary" />
                                 <h3 className="text-base font-bold">{category.category}</h3>
                             </div>
-                            <div className="flex flex-col gap-4">
+                            <div className="flex flex-wrap gap-2">
                                 {category.items.map((skill) => (
-                                    <SkillBar
-                                        key={skill.name}
-                                        name={skill.name}
-                                        level={skill.level}
-                                        visible={barsVisible}
-                                    />
+                                    <span
+                                        key={skill}
+                                        className="px-3 py-1.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20 transition-all duration-300 hover:bg-primary hover:text-white dark:text-violet-200 dark:border-violet-500/30 dark:bg-violet-500/15 dark:hover:bg-violet-500 dark:hover:text-white"
+                                    >
+                                        {skill}
+                                    </span>
                                 ))}
                             </div>
                         </div>

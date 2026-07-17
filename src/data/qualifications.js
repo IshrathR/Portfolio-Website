@@ -3,8 +3,8 @@ const qualifications = {
         {
             id: 1,
             title: "S. Thomas' College, Mt. Lavinia",
-            subtitle: "A/L -Physical Science (3Bs)",
-            date: "2010 – 2019",
+            subtitle: "G.C.E Advanced Level - Physical Science (3Bs)",
+            date: "2010 - 2019",
         },
         {
             id: 2,

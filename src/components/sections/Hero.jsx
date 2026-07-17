@@ -51,7 +51,7 @@ export default function Hero() {
                             {personal.topSkills.map((skill) => (
                                 <span
                                     key={skill}
-                                    className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20"
+                                    className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20 dark:text-violet-200 dark:border-violet-500/30 dark:bg-violet-500/15"
                                 >
                                     {skill}
                                 </span>

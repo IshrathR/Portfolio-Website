@@ -27,8 +27,8 @@ export default function Certifications() {
                                     className="w-10 h-10 object-contain rounded shrink-0"
                                 />
                             ) : (
-                                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                                    <span className="text-primary font-bold text-xs">{cert.issuer[0]}</span>
+                                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 dark:bg-violet-500/15">
+                                    <span className="text-primary font-bold text-xs dark:text-violet-200">{cert.issuer[0]}</span>
                                 </div>
                             )}
                             <div>

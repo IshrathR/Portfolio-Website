@@ -29,8 +29,8 @@ export default function Achievements() {
                                 key={a.id}
                                 className="glass p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 reveal flex items-start gap-4"
                             >
-                                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                                    <Icon size={20} className="text-primary" />
+                                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 dark:bg-violet-500/15">
+                                    <Icon size={20} className="text-primary dark:text-violet-200" />
                                 </div>
                                 <div>
                                     <h3 className="text-sm font-bold leading-snug">{a.title}</h3>

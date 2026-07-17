@@ -1,30 +1,78 @@
-import { LuCode, LuServer, LuCloud } from 'react-icons/lu';
+import {
+    LuCode,
+    LuServer,
+    LuDatabase,
+    LuWrench,
+    LuCloud,
+    LuBrain,
+} from 'react-icons/lu';
 
 const skills = [
     {
         category: "Frontend",
         icon: LuCode,
         items: [
-            { name: "React.js", level: 85 },
-            { name: "Angular", level: 70 },
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "TypeScript",
+            "React.js",
+            "Next.js",
+            "Tailwind CSS",
+            "Angular",
+            "Vue.js",
         ],
     },
     {
         category: "Backend",
         icon: LuServer,
         items: [
-            { name: ".NET / C#", level: 90 },
-            { name: "Node.js", level: 80 },
-            { name: "GraphQL", level: 75 },
+            ".NET / C#",
+            "ASP.NET",
+            ".NET Core",
+            "Web API",
+            "MVC",
+            "Entity Framework",
+            "LINQ",
+            "REST",
+            "GraphQL",
+            "Microservices Architecture",
+            "Node.js",
         ],
     },
     {
-        category: "Cloud & AI",
+        category: "Databases",
+        icon: LuDatabase,
+        items: ["SQL Server", "MySQL", "MongoDB"],
+    },
+    {
+        category: "DevOps & Tools",
+        icon: LuWrench,
+        items: ["Git", "GitHub", "Azure DevOps", "CI/CD Pipelines"],
+    },
+    {
+        category: "Cloud Platforms & Services",
         icon: LuCloud,
         items: [
-            { name: "Microsoft Azure", level: 85 },
-            { name: "AWS", level: 65 },
-            { name: "Azure OpenAI", level: 70 },
+            "Microsoft Azure",
+            "Azure App Services",
+            "Azure Functions",
+            "Azure Storage",
+            "Azure Key Vault",
+            "AWS",
+            "AWS Lambda",
+        ],
+    },
+    {
+        category: "AI & ML",
+        icon: LuBrain,
+        items: [
+            "Azure OpenAI",
+            "OpenAI",
+            "LangChain",
+            "TensorFlow",
+            "Scikit-Learn",
+            "PyTorch",
         ],
     },
 ];
