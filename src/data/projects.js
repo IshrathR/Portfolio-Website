@@ -31,42 +31,37 @@ const projects = [
     },
     {
         id: 4,
+        title: "Wheelsperer",
+        description:
+            "Conversational AI-based personalized vehicle recommendation system. Built a knowledge-based filtering engine integrated with Rasa and OpenAI Assistant API for natural language understanding, enabling users to describe their vehicle needs in plain English and receive tailored model suggestions with advertisements.",
+        timeline: "Sep 2022 – Jan 2023",
+        image: "/assets/img/Wheelsperer.jpeg",
+        tags: ["Rasa", "OpenAI", "Python", "NLP", "Machine Learning"],
+    },
+    {
+        id: 5,
+        title: "SnapFix",
+        description:
+            "Vehicle exterior damage detection and repair cost estimation using few-shot learning. Built three models combining Prototypical Networks and MAML for damage level classification (70.8% accuracy), damage type classification (79.89%), and cost estimation — trained on minimal labelled data with CNN backbones like ResNet and Mask R-CNN.",
+        timeline: "Sep 2024 – Feb 2025",
+        image: "/assets/img/SnapFix.png",
+        tags: ["Python", "PyTorch", "Few-Shot Learning", "Computer Vision", "CNN", "MAML"],
+    },
+    {
+        id: 6,
         title: "Libraria",
-        description: "A desktop app built with C# and WPF to manage library operations.",
+        description:
+            "A comprehensive desktop application built with C# and WPF for managing library operations. Features include book cataloguing, member management, borrowing and returns tracking with due date alerts, and fine calculation — all wrapped in a clean, intuitive interface designed for librarians and library staff.",
         image: "/assets/img/libraria.jpg",
         tags: ["C#", "WPF", "Desktop"],
     },
     {
-        id: 5,
-        title: "Warranty Manager",
+        id: 7,
+        title: "WarrantyPal",
         description:
-            "Responsive web app for managing warranty information of households.",
+            "A fully responsive web application that helps households organize and track warranty information for appliances, electronics, and other purchases. Features receipt upload, expiry notifications, warranty claim status tracking, and a searchable inventory dashboard — ensuring no warranty ever goes unused.",
         image: "/assets/img/warranty.jpg",
         tags: ["Web", "Responsive"],
-    },
-    {
-        id: 6,
-        title: "Clima",
-        description:
-            "Mobile weather app showing live data for current location and any city.",
-        image: "/assets/img/clima.jpg",
-        tags: ["Mobile", "API", "Flutter"],
-    },
-    {
-        id: 7,
-        title: "Bitcoin Convertor",
-        description:
-            "Mobile app for checking Bitcoin, Ethereum & Litecoin prices.",
-        image: "/assets/img/bitcoin.jpg",
-        tags: ["Mobile", "Crypto"],
-    },
-    {
-        id: 8,
-        title: "Health Calculator",
-        description:
-            "BMI, BFP & BMR calculator built with Flutter for health tracking.",
-        image: "/assets/img/health-calculator.jpg",
-        tags: ["Flutter", "Mobile", "Health"],
     },
 ];
 
